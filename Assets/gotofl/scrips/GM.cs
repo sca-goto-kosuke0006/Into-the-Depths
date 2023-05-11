@@ -8,7 +8,7 @@ public class GM : MonoBehaviour
     //Sliderコーポネントを管理する用
     Slider HPbar;
     //HPを定義
-    public int HP = 75;
+    public int HP = 150;
 
     //現在の時間
     private float currentTime = 0f;
@@ -26,7 +26,7 @@ public class GM : MonoBehaviour
         HPbar.maxValue = HP;
 
         //HPの初期値を０に
-        HPbar.value = 75;
+        HPbar.value = 150;
     }
 
     // Update is called once per frame
@@ -36,7 +36,7 @@ public class GM : MonoBehaviour
         currentTime += Time.deltaTime;
 
         //毎秒処理を行う
-        if (currentTime >= 1.0f)
+        if (currentTime >= 0.5f)
         {
             //フラグがtrueの時だけ処理する
             if (heal_flag == true)

@@ -10,7 +10,8 @@ public class PlayerController : MonoBehaviour
     private float speed;
     public float inputSpeed;
     Slider HPbar;
-    
+   
+
 
     void Start()
     {
@@ -18,6 +19,7 @@ public class PlayerController : MonoBehaviour
 
         //HPバーを取得
         HPbar = GameObject.Find("HPbar").GetComponent<Slider>();
+   
     }
     void Update()
     {
@@ -51,5 +53,6 @@ public class PlayerController : MonoBehaviour
         {
             HPbar.value += 30;
         }
+       
     }
 }

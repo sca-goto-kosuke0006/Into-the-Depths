@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class Camera : MonoBehaviour
 {
-    [SerializeField] Transform playerTr; // プレイヤーのTransform
-    [SerializeField] Vector2 camaraMaxPos = new Vector2(0, 0); // カメラの右上限界点
-    [SerializeField] Vector2 camaraMinPos = new Vector2(0, 0); // カメラの左下限界点
-
-    private void Update()
+    public GameObject player;
+    private Vector3 offset;
+    void Start()
+    {;
+        // ゲームスタート時でのPlayerとカメラの位置関係を記憶
+        offset = transform.position - player.transform.position;
+    }
+    void Update()
     {
-        transform.position = new Vector3(
-            Mathf.Clamp(playerTr.position.x+6, camaraMinPos.x, camaraMaxPos.x), // カメラの左右を制限
-            Mathf.Clamp(playerTr.position.y, camaraMinPos.y, camaraMaxPos.y), // カメラの上下を制限
-            -10f); // カメラz座標は-10f
+    }
+
+    void LateUpdate()
+    {
+        // Playerの現在位置から新しいカメラの位置を作成
+        Vector3 vector = player.transform.position + offset;
+        // 縦方向は固定
+       // vector.y = transform.position.y;
+        // カメラの位置を移動
+        transform.position = vector;
     }
 }
