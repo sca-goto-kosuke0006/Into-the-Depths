@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GM : MonoBehaviour
 {
@@ -49,6 +50,11 @@ public class GM : MonoBehaviour
             }
             currentTime = 0;
         }
+        if (HPbar.value == 0)
+        {
+            SceneManager.LoadScene("gameover");
+        }
+
     }
 
     //ボタンで呼び出される関数
@@ -63,5 +69,9 @@ public class GM : MonoBehaviour
     {
         heal_flag = false;
         poison_flag = true;
+    }
+
+    private void gameover()
+    {
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MenuPanel : MonoBehaviour
 {
@@ -14,10 +15,22 @@ public class MenuPanel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.G))
+        if (Input.GetKey(KeyCode.Tab))
         {
-            var isActive = Panel.activeInHierarchy; // panelがアクティブか取得
-            Panel.SetActive(!isActive);             // 反転させる
+            Panel.SetActive(true);
         }
+        //if (Input.GetKeyDown(KeyCode.G))
+        //{
+        //    var isActive = Panel.activeInHierarchy; // panelがアクティブか取得
+        //    Panel.SetActive(!isActive);
+        //    if()
+        //    {
+        //        Time.timeScale = 0;
+        //    }
+        //    else
+        //    {
+        //        Time.timeScale = 1;
+        //    }
+        //}
     }
 }
