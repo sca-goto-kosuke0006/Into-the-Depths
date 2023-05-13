@@ -17,7 +17,15 @@ public class MenuPanel : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Tab))
         {
-            Panel.SetActive(true);
+            var isActive = Panel.activeInHierarchy; // Panelがアクティブか取得
+            Panel.SetActive(!isActive);
+            if (isActive == false) { 
+                Time.timeScale = 0;
+            }
+            else
+            {
+                Time.timeScale = 1;
+            }
         }
         //if (Input.GetKeyDown(KeyCode.G))
         //{
