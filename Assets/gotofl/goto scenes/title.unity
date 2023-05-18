@@ -133,7 +133,6 @@ GameObject:
   - component: {fileID: 11464475}
   - component: {fileID: 11464474}
   - component: {fileID: 11464473}
-  - component: {fileID: 11464472}
   - component: {fileID: 11464471}
   m_Layer: 5
   m_Name: Button
@@ -171,19 +170,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 11464469}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23724ed781cff5e4db9b70039270e40b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &11464472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 11464469}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23724ed781cff5e4db9b70039270e40b, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b395e44b2507824c80271393b633224, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &11464473
@@ -229,7 +216,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11464472}
+      - m_Target: {fileID: 11464471}
         m_MethodName: OnClickStartButton
         m_Mode: 1
         m_Arguments:

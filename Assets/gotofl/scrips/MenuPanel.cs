@@ -6,16 +6,12 @@ using UnityEngine.UI;
 public class MenuPanel : MonoBehaviour
 {
     [SerializeField] GameObject Panel;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] GameObject Panel2;
+    [SerializeField] GameObject Panel3;
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Tab))
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
             var isActive = Panel.activeInHierarchy; // Panelがアクティブか取得
             Panel.SetActive(!isActive);
@@ -24,6 +20,8 @@ public class MenuPanel : MonoBehaviour
             }
             else
             {
+                Panel2.SetActive(false);
+                Panel3.SetActive(false);
                 Time.timeScale = 1;
             }
         }
