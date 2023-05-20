@@ -5,8 +5,7 @@ using UnityEngine;
 public class Toge : MonoBehaviour
 {
     [SerializeField]private float _length=1;
-   
-
+    private string enemyTag = "Enemy";
     
 
     // Start is called before the first frame update
@@ -25,5 +24,12 @@ public class Toge : MonoBehaviour
        
 
         transform.localPosition = new Vector3(0, value, 0);
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.collider.tag==enemyTag)
+        {
+        Debug.Log("Damage");
+        }
     }
 }
