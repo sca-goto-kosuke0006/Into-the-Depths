@@ -36,7 +36,7 @@ public class hakai: MonoBehaviour
         {
 
             // 飛ばすパワーと回転をランダムに設定
-            Vector2 forcePower = new Vector2(Random.Range(-10, 10), Random.Range(-10, 10));
+            Vector2 forcePower = new Vector2(Random.Range(-1, 1), Random.Range(-5, 5));
             float torquePower = Random.Range(-10, 10);
 
             // パーツをふっとばす！
