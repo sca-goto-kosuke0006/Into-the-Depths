@@ -57,4 +57,14 @@ public class Score: MonoBehaviour
         }
 
     }
+    public void ResetScore()
+    {
+        //0にするプログラム
+        totalscore=0;
+        scoreText.text = string.Format("Score:{0:00000}", totalscore);
+        scorejewelry = 0;
+        scoreJewelry.text = string.Format("宝石:{0:00}", scorejewelry);
+        scoremineral = 0;
+        scoreMineral.text = string.Format("鉱石:{0:00}", scoremineral);
+    }
 }
