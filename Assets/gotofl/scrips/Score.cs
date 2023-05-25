@@ -12,6 +12,8 @@ public class Score: MonoBehaviour
     [SerializeField] private Text totalJewelry;
     [SerializeField] private Text totalMineral;
 
+
+
     private int totalscore =0;
     private int scorejewelry =0;
     private int totalJLscore=0;
@@ -66,5 +68,9 @@ public class Score: MonoBehaviour
         scoreJewelry.text = string.Format("宝石:{0:00}", scorejewelry);
         scoremineral = 0;
         scoreMineral.text = string.Format("鉱石:{0:00}", scoremineral);
+        totalJLscore = 0;
+        totalJewelry.text = string.Format("宝石:{0:00}", totalJLscore);
+        totalMLscore = 0;
+        totalMineral.text = string.Format("鉱石:{0:00}", totalMLscore);
     }
 }
