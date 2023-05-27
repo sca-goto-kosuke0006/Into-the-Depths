@@ -6,6 +6,7 @@ public class player : MonoBehaviour
 {
     [SerializeField]float speed;
     private string enemyTag = "Enemy";
+    Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
