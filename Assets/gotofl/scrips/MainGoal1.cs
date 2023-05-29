@@ -2,22 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Goal : MonoBehaviour
+public class MainGoal1 : MonoBehaviour
 {
     [SerializeField] GameObject Panel;
-    private bool _isGoal;
+    private bool _isMain1Goal;
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (!_isGoal) { 
-            if (other.gameObject.tag == "Player")
+        if (!_isMain1Goal)
         {
+            if (other.gameObject.tag == "Player")
+            {
                 Panel.SetActive(true);
                 Time.timeScale = 0;
-                Debug.Log("チュートリアルした");
-                _isGoal =true;
+                Debug.Log("ゴールした");
+                _isMain1Goal = true;
             }
-       }
+        }
     }
 
 }
+
