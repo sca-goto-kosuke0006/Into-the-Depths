@@ -8,6 +8,9 @@ TagManager:
   - Jewelry
   - Mineral
   - Enemy
+  - Relic1
+  - Relic2
+  - Relic3
   layers:
   - Default
   - TransparentFX

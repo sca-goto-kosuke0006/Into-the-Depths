@@ -28,14 +28,14 @@ public class Score: MonoBehaviour
         {
             //宝石と鉱石の合計値
             totalscore+=100;
-            scoreText.text=string.Format("Score:{0:00000}",totalscore);
+            scoreText.text=string.Format("{0:00000}",totalscore);
             //宝石の取得数
             scorejewelry +=1;
-            scoreJewelry.text= string.Format("宝石:{0:00}", scorejewelry);
+            scoreJewelry.text= string.Format("Jewelry:{0:00}", scorejewelry);
 
             //クリア時の宝石スコア合計
             totalJLscore +=100;
-            totalJewelry.text = string.Format("宝石:{0:00}", totalJLscore);
+            totalJewelry.text = string.Format("Jewelry:{0:00}", totalJLscore);
             //クリア時の宝石と鉱石の合計値
             totalScore.text = string.Format("合計Score:{0:00}", totalscore);
 
@@ -46,14 +46,14 @@ public class Score: MonoBehaviour
         {
             //宝石と鉱石の合計値
             totalscore += 50;
-            scoreText.text = string.Format("Score:{0:00000}", totalscore);
+            scoreText.text = string.Format("{0:00000}", totalscore);
             //鉱石の取得数
             scoremineral += 1;
-            scoreMineral.text =string.Format("鉱石:{0:00}", scoremineral);
+            scoreMineral.text =string.Format("Mineral:{0:00}", scoremineral);
 
             //クリア時の鉱石スコア合計
             totalMLscore += 50;
-            totalMineral.text = string.Format("鉱石:{0:00}", totalMLscore);
+            totalMineral.text = string.Format("Mineral:{0:00}", totalMLscore);
             //クリア時の宝石と鉱石の合計値
             totalScore.text = string.Format("合計Score:{0:00}", totalscore);
         }
@@ -63,14 +63,14 @@ public class Score: MonoBehaviour
     {
         //0にするプログラム
         totalscore=0;
-        scoreText.text = string.Format("Score:{0:00000}", totalscore);
+        scoreText.text = string.Format("{0:00000}", totalscore);
         scorejewelry = 0;
-        scoreJewelry.text = string.Format("宝石:{0:00}", scorejewelry);
+        scoreJewelry.text = string.Format("Jewelry:{0:00}", scorejewelry);
         scoremineral = 0;
-        scoreMineral.text = string.Format("鉱石:{0:00}", scoremineral);
+        scoreMineral.text = string.Format("Mineral:{0:00}", scoremineral);
         totalJLscore = 0;
-        totalJewelry.text = string.Format("宝石:{0:00}", totalJLscore);
+        totalJewelry.text = string.Format("Jewelry:{0:00}", totalJLscore);
         totalMLscore = 0;
-        totalMineral.text = string.Format("鉱石:{0:00}", totalMLscore);
+        totalMineral.text = string.Format("Mineral:{0:00}", totalMLscore);
     }
 }
