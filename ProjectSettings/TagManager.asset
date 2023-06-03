@@ -11,6 +11,8 @@ TagManager:
   - Relic1
   - Relic2
   - Relic3
+  - iwa
+  - sensor
   layers:
   - Default
   - TransparentFX
