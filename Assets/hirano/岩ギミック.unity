@@ -380,6 +380,7 @@ GameObject:
   - component: {fileID: 1294151713}
   - component: {fileID: 1294151716}
   - component: {fileID: 1294151712}
+  - component: {fileID: 1294151717}
   m_Layer: 0
   m_Name: iwa
   m_TagString: iwa
@@ -485,6 +486,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &1294151717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294151711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcd4556de19d2a04e89528a86e703548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openDoorScript: {fileID: 0}
 --- !u!1 &1541706915
 GameObject:
   m_ObjectHideFlags: 0
