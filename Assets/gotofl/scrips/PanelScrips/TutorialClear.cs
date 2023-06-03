@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TutorialClear : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class TutorialClear : MonoBehaviour
     { 
         Panel.SetActive(false);
         Time.timeScale =1;
+        SceneManager.LoadScene("MainStage1");
 
         scoreManager.ResetScore();//ここでスコアをリセット
     }

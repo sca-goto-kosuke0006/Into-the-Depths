@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Goal : MonoBehaviour
 {
     [SerializeField] GameObject Panel;
@@ -16,6 +17,7 @@ public class Goal : MonoBehaviour
                 Time.timeScale = 0;
                 Debug.Log("チュートリアルした");
                 _isGoal =true;
+               
             }
        }
     }

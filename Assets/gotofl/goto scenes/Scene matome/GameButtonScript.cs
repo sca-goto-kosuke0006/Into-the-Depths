@@ -7,7 +7,7 @@ public class GameButtonScript : MonoBehaviour
 {
     public void OnClickStartButton()
     {
-        SceneManager.LoadScene("game");
+        SceneManager.LoadScene("Stage");
         Time.timeScale = 1;
     }
 }

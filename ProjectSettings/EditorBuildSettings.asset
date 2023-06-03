@@ -11,12 +11,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/gotofl/goto scenes/title.unity
     guid: 5dcad255c80e7da4ea8165ef95732545
-  - enabled: 1
+  - enabled: 0
     path: Assets/gotofl/goto scenes/game.unity
     guid: 175002ee0bcc16e418a1cfae8e975b54
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/gotofl/goto scenes/menu.unity
-    guid: 382369a9171bd8240ac7c089bbb0f285
+    path: Assets/gotofl/goto scenes/Stage.unity
+    guid: 28145d5b11e84914fabc324a7e96fcae
+  - enabled: 1
+    path: Assets/gotofl/goto scenes/MainStage1.unity
+    guid: 9e4b3427ef709b249ab240e85f90c79c
   - enabled: 1
     path: Assets/gotofl/goto scenes/gameover.unity
     guid: efc6f5ee857bb45409fd6aaae8c3c61a
