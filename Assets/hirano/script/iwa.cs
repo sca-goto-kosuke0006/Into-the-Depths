@@ -21,7 +21,7 @@ public class iwa : MonoBehaviour
         if (collider.gameObject.CompareTag("sensor"))
         {
 
-            Debug.Log("a");
+          
             Vector3 iwa =transform.position;
             Vector3 sensor=new Vector3(-1,1,0);
             float step=10.0f*Time.deltaTime;
