@@ -20,7 +20,7 @@ public class touch : MonoBehaviour
     {
         if(collider.gameObject.CompareTag("iwa"))
         {
-        Debug.Log("hit");
+            Debug.Log("hit");
         }
     }
 }
