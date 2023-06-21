@@ -15,16 +15,7 @@ public class Player2 : MonoBehaviour
     {
         float x = Input.GetAxisRaw("Horizontal");
         Vector3 scale = transform.localScale;
-        if (x >= 0)
-        {
-            // 右方向に移動中
-            scale.x = 1; // そのまま（右向き）
-        }
-        else
-        {
-            // 左方向に移動中
-            scale.x = -1; // 反転する（左向き）
-        }
+       
         // 代入し直す
         transform.localScale = scale;
         float y = Input.GetAxisRaw("Vertical");
