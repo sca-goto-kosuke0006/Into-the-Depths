@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 530921583}
   - component: {fileID: 530921582}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: "\u5DE6\u306B\u52D5\u304F\u3082\u306E"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -227,7 +227,7 @@ GameObject:
   - component: {fileID: 1151955647}
   - component: {fileID: 1151955646}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: "\u53F3\u306B\u52D5\u304F\u3082\u306E"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -367,6 +367,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e25b6e63aeeb86a4383aebd1405f8260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rightMove: {fileID: 1151955645}
+  leftMove: {fileID: 530921581}
 --- !u!1 &1294151711
 GameObject:
   m_ObjectHideFlags: 0
@@ -498,7 +500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd4556de19d2a04e89528a86e703548, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  openDoorScript: {fileID: 0}
+  openDoorRightScript: {fileID: 0}
 --- !u!1 &1541706915
 GameObject:
   m_ObjectHideFlags: 0

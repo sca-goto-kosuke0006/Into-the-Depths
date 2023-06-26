@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class iwa : MonoBehaviour
 {
-    [SerializeField] OpenDoor openDoorScript;
+    [SerializeField] OpenDoor openDoorRightScript;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -30,8 +31,7 @@ public class iwa : MonoBehaviour
             Destroy(GetComponent<CircleCollider2D>());
             Destroy(GetComponent<Rigidbody2D>());
             
-            //関数を呼ぶ
-            openDoorScript.Open();
+        
         }
     }
 }
