@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/gotofl/goto scenes/title.unity
     guid: 5dcad255c80e7da4ea8165ef95732545
   - enabled: 0
-    path: Assets/gotofl/goto scenes/game.unity
+    path: 
     guid: 175002ee0bcc16e418a1cfae8e975b54
   - enabled: 0
     path: 
@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/gotofl/goto scenes/gameover.unity
     guid: efc6f5ee857bb45409fd6aaae8c3c61a
+  - enabled: 1
+    path: Assets/gotofl/goto scenes/hiddenRoom1.unity
+    guid: 7c74d839e387f684b86f3f2e0c748ea5
   m_configObjects: {}
