@@ -23,6 +23,5 @@ public class Player2 : MonoBehaviour
         transform.Translate(new Vector3(x, y, 0) * speed * Time.deltaTime);
 
 
-
     }
 }

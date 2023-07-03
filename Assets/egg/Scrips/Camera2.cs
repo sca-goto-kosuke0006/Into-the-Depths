@@ -4,25 +4,20 @@ using UnityEngine;
 
 public class Camera2 : MonoBehaviour
 {
-    GameObject playerObj;
-    Player player;
-    Transform playerTransform;
+    GameObject player;
 
+    // Use this for initialization
     void Start()
     {
-        playerObj = GameObject.FindGameObjectWithTag("Player");
-        player = playerObj.GetComponent<Player>();
-        playerTransform = playerObj.transform;
+        // Playerの部分はカメラが追いかけたいオブジェクトの名前をいれる
+        this.player = GameObject.Find("Player");
     }
 
+    // Update is called once per frame
     void Update()
     {
-        MoveCamera();
-    }
-
-    void MoveCamera()
-    {
-
-        transform.position = new Vector3(playerTransform.position.x, playerTransform.position.y, transform.position.z);
+        Vector3 playerPos = this.player.transform.position;
+        transform.position = new Vector3(
+            transform.position.x, playerPos.y, transform.position.z);
     }
 }
