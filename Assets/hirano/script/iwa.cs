@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class iwa : MonoBehaviour
 {
-    [SerializeField] OpenDoor openDoorRightScript;
+    
     
     // Start is called before the first frame update
     void Start()
