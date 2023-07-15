@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 8040885209969783679}
   - component: {fileID: 8040885209969783672}
   - component: {fileID: 8040885209969783678}
+  - component: {fileID: -801975026575078580}
+  - component: {fileID: -8941797541902624619}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -144,3 +146,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 33.172596, y: 30.5}
   m_EdgeRadius: 0
+--- !u!114 &-801975026575078580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8040885209969783675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9812aaa71564b647a1b4355cc041f23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
+  scoreJewelry: {fileID: 0}
+  scoreMineral: {fileID: 0}
+  totalScore: {fileID: 0}
+  totalJewelry: {fileID: 0}
+  totalMineral: {fileID: 0}
+--- !u!114 &-8941797541902624619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8040885209969783675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7a9292ea2c9df34f9611e0695abdab8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Relic1: {fileID: 0}
+  Relic2: {fileID: 0}
+  Relic3: {fileID: 0}
+  relicCount: {fileID: 0}
