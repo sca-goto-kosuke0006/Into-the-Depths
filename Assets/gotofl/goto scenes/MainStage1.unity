@@ -4802,6 +4802,28 @@ PolygonCollider2D:
       - {x: -0.39999998, y: -8.47}
       - {x: -0.26999998, y: -8.34}
       - {x: -0.19999999, y: -8.179999}
+--- !u!1 &554719847 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8040885209969783675, guid: 7a5880aece0dcb949b6b6637ffc3c174,
+    type: 3}
+  m_PrefabInstance: {fileID: 1305658222}
+  m_PrefabAsset: {fileID: 0}
+--- !u!70 &554719855
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554719847}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 33.172596, y: 30.5}
+  m_Direction: 0
 --- !u!1001 &558935012
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11162,6 +11184,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8040885209969783678, guid: 7a5880aece0dcb949b6b6637ffc3c174,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8040885209969783679, guid: 7a5880aece0dcb949b6b6637ffc3c174,
         type: 3}
