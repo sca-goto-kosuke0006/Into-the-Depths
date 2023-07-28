@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class iwa : MonoBehaviour
 {
-    [SerializeField] OpenDoor openDoorScript;
+    
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -23,15 +24,14 @@ public class iwa : MonoBehaviour
 
           
             Vector3 iwa =transform.position;
-            Vector3 sensor=new Vector3(-1,1,0);
+            Vector3 sensor=new Vector3(-2,1,0);
             float step=10.0f*Time.deltaTime;
             transform.position=Vector3.MoveTowards(iwa,sensor,10.0f);
             gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             Destroy(GetComponent<CircleCollider2D>());
             Destroy(GetComponent<Rigidbody2D>());
             
-            //関数を呼ぶ
-            openDoorScript.Open();
+        
         }
     }
 }
