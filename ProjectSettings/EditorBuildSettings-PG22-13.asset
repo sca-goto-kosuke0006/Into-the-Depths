@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/gotofl/goto scenes/title.unity
+    guid: 5dcad255c80e7da4ea8165ef95732545
+  - enabled: 0
+    path: 
+    guid: 175002ee0bcc16e418a1cfae8e975b54
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/gotofl/goto scenes/Stage.unity
+    guid: 28145d5b11e84914fabc324a7e96fcae
+  - enabled: 1
+    path: Assets/gotofl/goto scenes/MainStage1.unity
+    guid: 9e4b3427ef709b249ab240e85f90c79c
+  - enabled: 1
+    path: Assets/gotofl/goto scenes/gameover.unity
+    guid: efc6f5ee857bb45409fd6aaae8c3c61a
+  - enabled: 1
+    path: Assets/gotofl/goto scenes/hiddenRoom1.unity
+    guid: 7c74d839e387f684b86f3f2e0c748ea5
+  m_configObjects: {}
