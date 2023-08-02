@@ -8,5 +8,6 @@ public class StartButtonScript : MonoBehaviour
     public void OnClickStartButton()
     {
         SceneManager.LoadScene("title");
+        Time.timeScale = 1;
     }
 }
