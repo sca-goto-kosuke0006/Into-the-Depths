@@ -17,5 +17,6 @@ public class menu : MonoBehaviour
 
 		// 最初に選択状態にしたいボタンの設定
 		Button1.Select();
+
 	}
 }

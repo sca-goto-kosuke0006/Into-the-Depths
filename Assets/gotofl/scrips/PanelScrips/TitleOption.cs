@@ -9,6 +9,7 @@ public class TitleOption : MonoBehaviour
 
     public void OnClick()
     {
+
         var isActive = Panel.activeInHierarchy; // Panelがアクティブか取得
         Panel.SetActive(!isActive);
 

@@ -395,6 +395,11 @@ PrefabInstance:
       propertyPath: totalMineral
       value: 
       objectReference: {fileID: 462137811}
+    - target: {fileID: 8040885209969783672, guid: 7a5880aece0dcb949b6b6637ffc3c174,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8040885209969783673, guid: 7a5880aece0dcb949b6b6637ffc3c174,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6854,6 +6859,19 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 33.172596, y: 30.5}
   m_Direction: 0
+--- !u!114 &1285931178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285931176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b0f37af8086f174abd227e8af63e359, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
 --- !u!60 &1285931179
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7573,6 +7591,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9812aaa71564b647a1b4355cc041f23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1285931181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285931176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48349330444d3e44fa7f73d7e237c3f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1297412750

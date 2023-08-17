@@ -11,8 +11,8 @@ public class MenuPanel : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Tab))
-        {
+        if (Input.GetKeyDown(KeyCode.Tab) ||Input.GetKeyDown("joystick button 7"))
+            {
             var isActive = Panel.activeInHierarchy; // Panelがアクティブか取得
             Panel.SetActive(!isActive);
             if (isActive == false) { 
