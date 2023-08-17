@@ -6831,7 +6831,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 893742175}
   CanvasPanel: {fileID: 230232769}
-  scoreManager: {fileID: 0}
+  scoreManager: {fileID: 1285931180}
 --- !u!1 &1285931176 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8040885209969783675, guid: 7a5880aece0dcb949b6b6637ffc3c174,
@@ -7563,6 +7563,18 @@ PolygonCollider2D:
       - {x: -0.4859267, y: 9.823818}
       - {x: -0.55071694, y: 9.661842}
       - {x: -0.5345194, y: 9.661842}
+--- !u!114 &1285931180 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -801975026575078580, guid: 7a5880aece0dcb949b6b6637ffc3c174,
+    type: 3}
+  m_PrefabInstance: {fileID: 97392966}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285931176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9812aaa71564b647a1b4355cc041f23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1297412750
 GameObject:
   m_ObjectHideFlags: 0
