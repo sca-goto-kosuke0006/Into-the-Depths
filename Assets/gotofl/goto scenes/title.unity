@@ -205,9 +205,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnDown: {fileID: 23124355}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 3
@@ -346,8 +346,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
+    m_Mode: 4
+    m_SelectOnUp: {fileID: 11464473}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
@@ -2948,6 +2948,7 @@ GameObject:
   - component: {fileID: 1398461118}
   - component: {fileID: 1398461119}
   - component: {fileID: 1398461120}
+  - component: {fileID: 1398461121}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3049,6 +3050,21 @@ MonoBehaviour:
   statusWindow: {fileID: 1993645657}
   select1: {fileID: 0}
   select2: {fileID: 0}
+--- !u!114 &1398461121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398461113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce82b332a2f756d419d52b447c6ce7b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartButton: {fileID: 11464473}
+  resumeButton: {fileID: 23124355}
+  titleButton: {fileID: 0}
 --- !u!1 &1430748375
 GameObject:
   m_ObjectHideFlags: 0
