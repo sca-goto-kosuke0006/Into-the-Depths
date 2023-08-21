@@ -205,7 +205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 4
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 23124355}
     m_SelectOnLeft: {fileID: 0}
@@ -3059,13 +3059,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1398461113}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: adf291b083d5b7e4c92e3680125d3266, type: 3}
+  m_Script: {fileID: 11500000, guid: ce82b332a2f756d419d52b447c6ce7b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 0}
-  Panel2: {fileID: 0}
-  Panel3: {fileID: 0}
-  ruleButton: {fileID: 11464473}
+  StartButton: {fileID: 11464473}
   resumeButton: {fileID: 23124355}
   titleButton: {fileID: 0}
 --- !u!1 &1430748375
