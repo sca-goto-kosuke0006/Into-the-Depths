@@ -22,6 +22,11 @@ public class Player2 : MonoBehaviour
         //変更　スピードをかけている
         transform.Translate(new Vector3(x, y, 0) * speed * Time.deltaTime);
 
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            Destroy(gameObject);
+          
+        }
 
     }
 }
