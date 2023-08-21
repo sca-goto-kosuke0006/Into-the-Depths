@@ -29,4 +29,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/gotofl/goto scenes/hiddenRoom1.unity
     guid: 7c74d839e387f684b86f3f2e0c748ea5
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: ec59ec525687c804d91240d3c4f538aa,
+      type: 2}

@@ -7,9 +7,24 @@ public class Controer : MonoBehaviour
     [SerializeField] GameObject Panel;
     [SerializeField] GameObject Panel2;
     [SerializeField] GameObject Panel3;
+    [SerializeField] Button ruleButton;
+    [SerializeField] Button resumeButton;
+    [SerializeField] Button titleButton;
+    bool isPause = false;
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("あたった");
+        if (isPause)
+        {
+            Debug.Log("Pause");
+            if (Input.GetKeyDown("joystick button 0"))//加速移動
+            {
+                ruleButton.Select();
+                Debug.Log("test");
+            }
+        }
+
         if (Input.GetKeyDown("joystick button 0"))//加速移動
         {
             Debug.Log("button0");
@@ -42,6 +57,12 @@ public class Controer : MonoBehaviour
         {
             var isActive = Panel.activeInHierarchy; // Panelがアクティブか取得
             Panel.SetActive(!isActive);
+            isPause = true;
+            ruleButton.Select();
+            if (Input.GetKeyDown("joystick button 1"))//おす、引く
+            {
+               //Select;
+            }
             if (isActive == false)
             {
                 Time.timeScale = 0;
@@ -51,9 +72,10 @@ public class Controer : MonoBehaviour
                 Panel2.SetActive(false);
                 Panel3.SetActive(false);
                 Time.timeScale = 1;
+                isPause = false;
                 Debug.Log("button7");
-        }
-        if (Input.GetKeyDown("joystick button 8"))
+            }
+            if (Input.GetKeyDown("joystick button 8"))
         {
             Debug.Log("button8");
         }
