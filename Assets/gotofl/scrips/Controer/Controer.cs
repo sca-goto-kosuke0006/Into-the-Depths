@@ -53,7 +53,7 @@ public class Controer : MonoBehaviour
         {
             Debug.Log("button6");
         }
-        if (Input.GetKeyDown("joystick button 7"))//ポーズ
+        if (Input.GetKeyDown("joystick button 7")||Input.GetButtonDown("Tab"))//ポーズ
         {
             var isActive = Panel.activeInHierarchy; // Panelがアクティブか取得
             Panel.SetActive(!isActive);

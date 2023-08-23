@@ -22,6 +22,15 @@ public class TyutoControer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (isPause)
+        {
+            Debug.Log("Pause");
+            if (Input.GetKeyDown("joystick button 0"))//加速移動
+            {
+                StartButton.Select();
+                Debug.Log("test");
+            }
+        }
+       
     }
 }
