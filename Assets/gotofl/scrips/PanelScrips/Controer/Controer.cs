@@ -18,7 +18,7 @@ public class Controer : MonoBehaviour
         if (isPause)
         {
             Debug.Log("Pause");
-            if (Input.GetKeyDown("joystick button 0"))//加速移動
+            if (Input.GetKeyDown("joystick button 1"))//加速移動
             {
                 ruleButton.Select();
                 Debug.Log("test");
@@ -53,7 +53,7 @@ public class Controer : MonoBehaviour
         {
             Debug.Log("button6");
         }
-        if (Input.GetKeyDown("joystick button 7")||Input.GetButtonDown("Tab"))//ポーズ
+        if (Input.GetKeyDown("joystick button 7"))//ポーズ
         {
             var isActive = Panel.activeInHierarchy; // Panelがアクティブか取得
             Panel.SetActive(!isActive);

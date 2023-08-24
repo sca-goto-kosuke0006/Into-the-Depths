@@ -8,6 +8,8 @@ public class Score: MonoBehaviour
     [SerializeField]private Text scoreJewelry;
     [SerializeField] private Text scoreMineral;
 
+    [SerializeField] private Text rericCount;
+
     [SerializeField] private Text totalScore;
     [SerializeField] private Text totalJewelry;
     [SerializeField] private Text totalMineral;
