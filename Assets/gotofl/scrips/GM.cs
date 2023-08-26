@@ -43,6 +43,7 @@ public class GM : MonoBehaviour
             if (heal_flag == true)
             {
                 HPbar.value += 10;
+                Debug.Log("酸素回復");
             }
             if (poison_flag == true)
             {
