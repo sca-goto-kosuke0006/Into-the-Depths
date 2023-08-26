@@ -11,12 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/gotofl/goto scenes/title.unity
     guid: 5dcad255c80e7da4ea8165ef95732545
-  - enabled: 0
-    path: 
-    guid: 175002ee0bcc16e418a1cfae8e975b54
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/gotofl/goto scenes/Stage.unity
     guid: 28145d5b11e84914fabc324a7e96fcae
