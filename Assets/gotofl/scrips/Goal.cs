@@ -6,20 +6,41 @@ using UnityEngine;
 public class Goal : MonoBehaviour
 {
     [SerializeField] GameObject Panel;
+    [SerializeField] GameObject PanelGoal;
     private bool _is1Goal;
 
-    void OnTriggerEnter2D(Collider2D other)
+    private void Start()
     {
-        if (!_is1Goal) { 
+        _is1Goal = true;
+    }
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("kao");
+        if (_is1Goal==true) { 
             if (other.gameObject.tag == "Player")
         {
                 Panel.SetActive(true);
                 Time.timeScale = 0;
                 Debug.Log("第一階層クリア");
-                _is1Goal =true;
+               
                
             }
        }
+      
+    }
+    public　void OnClick1()
+    {
+        PanelGoal.SetActive(true);
+        Panel.SetActive(false);
+        _is1Goal = false;
+
+    }
+    public　void OnClick2()
+    {
+        Panel.SetActive(false);
+        
+        Time.timeScale = 1;
+
     }
 
 }
