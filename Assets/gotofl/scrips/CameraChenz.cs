@@ -4,41 +4,40 @@ using UnityEngine;
 
 public class CameraChenz : MonoBehaviour
 {
-    GameObject mainCamObj;
-
-    private float cameraX = 0.0f;
-
-    private bool Flag;
+    public string Check { get; set;}
    
     // Use this for initialization
     void Start()
     {
-        mainCamObj = Camera.main.gameObject;
-
-
-        Flag =false;
+        Check="";
+      
     }
 
     private void Update()
     {
-        if (Flag == false)
-        {
-            void OnTriggerEnter2D(Collider2D collision)
-            {
-                
-                Debug.Log("入る");
-                Flag=true;
-            }
-        }
-        else
-        {
-            void OnTriggerEnter2D(Collider2D collision)
-            {
-               
-                Debug.Log("戻る");
-                Flag=false;
-            }
-        }
+        
+
     }
 
+   
+   void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.name == "Move" || collision.name == "Move1") { 
+            Check = collision.name;
+        Debug.Log(collision.name);
+        }
+
+        
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.name == "Move"|| collision.name == "Move1")
+        {
+            Check = "";
+            Debug.Log("でた");
+        }
+       
+       
+    }
 }

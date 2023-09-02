@@ -5,6 +5,11 @@ using UnityEngine;
 public class Camera2 : MonoBehaviour
 {
     GameObject player;
+    
+    [SerializeField]
+    CameraChenz chenz;
+    [SerializeField]
+    CameraChenz chenz2;
 
     // Use this for initialization
     void Start()
@@ -16,8 +21,26 @@ public class Camera2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (chenz.Check == "")
+        {
+           
         Vector3 playerPos = this.player.transform.position;
         transform.position = new Vector3(
             transform.position.x, playerPos.y, transform.position.z);
+        }
+        else if(chenz.Check == "Move")
+        {
+            //Debug.Log("");
+            Vector3 playerPos = this.player.transform.position;
+            transform.position = new Vector3(
+                playerPos.x, transform.position.y, transform.position.z);
+        }
+        else if (chenz.Check == "Move1")
+        {
+            //Debug.Log("");
+            Vector3 playerPos = this.player.transform.position;
+            transform.position = new Vector3(
+                playerPos.x, transform.position.y, transform.position.z);
+        }
     }
 }
