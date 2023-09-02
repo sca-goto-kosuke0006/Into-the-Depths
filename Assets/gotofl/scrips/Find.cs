@@ -9,6 +9,7 @@ public class Find : MonoBehaviour
 			// 0.1秒後に消える
 			Destroy(gameObject, 0.01f);
 		}
+		GetComponent<AudioSource>().Play();
 	}
 
 }
