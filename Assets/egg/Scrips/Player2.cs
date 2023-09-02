@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player2 : MonoBehaviour
 {
     [SerializeField] float speed;
-    [SerializeField] SpriteRenderer sr;
+    [SerializeField]SpriteRenderer sr;
     void Start()
     {
         sr = this.GetComponent<SpriteRenderer>();
